@@ -38,23 +38,23 @@ class _LoginBoxState extends State<LoginBox> {
             'Password',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
-      TextFormField(
-        obscureText: isObscureText, //NOTE: asking if obscuretext is present or not
-        decoration: InputDecoration(
-          suffixIcon: IconButton(
-            onPressed: () {
-              setState((){
-                isObscureText = !isObscureText;
-              });
-            },
-            color: Colors.black,
-            icon: isObscureText?Icon(Icons.visibility):Icon(Icons.visibility_off),
+          TextFormField(
+            obscureText: isObscureText, //NOTE: asking if obscuretext is present or not
+            decoration: InputDecoration(
+              suffixIcon: IconButton(
+                onPressed: () {
+                  setState((){
+                    isObscureText = !isObscureText;
+                  });
+                },
+                color: Colors.black,
+                icon: isObscureText?Icon(Icons.visibility):Icon(Icons.visibility_off),
 
-          ), //NOTE: for eye icon in password
-          hintText: 'Password',
+              ), //NOTE: for eye icon in password
+              hintText: 'Password',
 
-        ),
-      ),
+            ),
+          ),
           SizedBox(
             height: 10,
           ),
